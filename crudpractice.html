@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    var student = [
+        {
+            name: "rajender",
+            age: 20,
+            add: "ngkl",
+            college: "svits",
+            mobilNo: 998564631,
+        },
+        {
+            name: "sandeep",
+            age: 19,
+            add: "hyd",
+            college: "govt",
+            mobilNo: 9985875431,
+        },
+        {
+            name: "shiva",
+            age: 28,
+            add: "hyd",
+            college: "stmary",
+            mobilNo: 9985392484,
+        },
+        {
+            name: "balRaj",
+            age: 27,
+            add: "hyd",
+            college: "svkr",
+            mobilNo: 949856432,
+        },
+        {
+            name: "kishore",
+            age: 20.6,
+            add: "ngkl",
+            college: "svits",
+            mobilNo: 9985502083,
+        },
+        {
+            name: "sunitha",
+            age: 30,
+            add: "shadnagar",
+            college: "ssvn",
+            mobilNo: 9951889965,
+        },
+        {
+            name: "tharuni",
+            age: 18,
+            add: "ngkl",
+            college: "ngklModel",
+            mobilNo: 9652137715,
+        },
+        {
+            name: "manikanta",
+            age: 15,
+            add: "ngkl",
+            college: "ngklmodel",
+            mobilNo: 8074254024,
+        },
+        {
+            name: "prasad",
+            age: 20.4,
+            add: "ngkl",
+            college: "ssvn",
+            mobilNo: 9985401239,
+        },
+        {
+            name: "srinika",
+            age: 22,
+            add: "pangal",
+            college: "govt",
+            mobilNo: 9985675456,
+        },
+    ]
+
+    //create
+    var a = {
+        name: "aaa",
+        age: 34,
+        add: "chtioor",
+        college: "govt",
+        mobilNo: 998578456,
+
+    }
+    student.push(a);
+    console.log(student);
+
+    //read
+    var readName = "rajender";
+    var b = student.filter(item => item.name == readName)
+    console.log(b);
+    var readAdd = "ngkl";
+    var c = student.filter(item => item.add == readAdd);
+    console.log(c);
+
+    //upDate
+    var mobilNo = 949856432;
+    var change = 66875456;
+    var d = student.find(item => item.mobilNo == mobilNo);
+    console.log(d);
+    d.mobilNo = change;
+    console.log(d);
+    console.log(student);
+    var college = "stmary";
+    var uCollege = "raviteja"
+    var e = student.find(item => item.college == college);
+    console.log(e);
+    e.college = uCollege;
+    console.log(e);
+    console.log(student);
+
+
+    //delete
+
+    var dName = "srinika";
+    var f = student.findIndex(item => item.name == dName);
+    console.log(f);
+    student.slice(f, 1);
+    onsole.log(student);
+
+
+
+
+</script>
+
+<body>
+
+</body>
+
+</html>
