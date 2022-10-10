@@ -1,0 +1,45 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-color: aquamarine;
+}
+
+.container {
+    display: flex;
+    place-items: center center;
+    flex-direction: column;
+    width: 16cm;
+    border-radius: 20px;
+    margin-top: 5cm;
+    padding: 30px;
+    background-color: rgb(69, 83, 189);
+}
+
+h1 {
+    color: rgb(105, 13, 61);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.content {
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: 2px;
+    margin-bottom: 10px;
+
+
+}
+
+#quote {
+    padding: 10px;
+}
+
+#author {
+    color: white;
+    align-self: flex-end;
+    margin-right: 1cm;
+}
+
+.quote {
+    font-weight: 2px;
+    font-size: 10px;
+}
