@@ -1,0 +1,109 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: darkblue;
+    color: wheat;
+}
+
+.diya {
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    position: relative;
+
+}
+
+.left {
+    width: 3cm;
+    height: 1.5cm;
+    border-radius: 0 0 0 100%;
+    background-color: brown;
+}
+
+.right {
+    width: 3cm;
+    height: 1.5cm;
+    border-radius: 0 0 100% 0;
+    background-color: brown;
+}
+
+.top {
+    width: 6cm;
+    height: 0.8cm;
+    background-color: rgb(239, 95, 95);
+    position: absolute;
+    transform: translateY(-50%);
+    border-radius: 50%;
+    border: 10px solid rgb(124, 34, 34);
+
+}
+
+.flame {
+    width: 20px;
+    height: 80px;
+    position: absolute;
+
+    bottom: 100%;
+    right: 10px;
+}
+
+.flame::before {
+    content: '';
+    width: 50%;
+    height: 30%;
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: linear-gradient(#371067 #3a1a21 #0e0d0d #bc941c 90%);
+    z-index: 1;
+
+}
+
+.flame::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    /* right: -0.3cm;
+    bottom: -40px;
+    transform: translate(-50%, -50%); */
+    border-radius: 50% 50% 30% 30%;
+    background: radial-gradient(circle at bottom, rgb(255, 98, 0) 0%, #b2b9a9);
+    z-index: 1;
+    animation: move 2s infinite;
+    transform-origin: bottom;
+}
+
+@keyframes move {
+    50% {
+        transform: rotate(10deg);
+    }
+
+}
+
+.text {
+    width: 600px;
+    color: #fff;
+    font-size: 50px;
+    position: relative;
+    top: -30px;
+    left: 30px;
+    animation: wipe 2s infinite;
+
+}
+
+@keyframes wipe {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
