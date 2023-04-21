@@ -1,0 +1,26 @@
+body {
+    padding: 120px;
+    margin: 20px;
+    background-color: antiquewhite;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top: 2cm;
+    border: 2px solid greenyellow;
+
+}
+
+aside img {
+    height: 3.5cm;
+    width: 3.5cm;
+
+}
+
+.head h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: red;
+    font-size: 45px;
+    font-weight: 500;
+    margin-bottom: 0.5cm;
+    text-align: center;
+}
